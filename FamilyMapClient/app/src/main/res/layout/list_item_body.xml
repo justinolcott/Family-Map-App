@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Icon on the left -->
+    <ImageView
+        android:id="@+id/icon_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_family" />
+
+    <!-- Text views to the right of the icon -->
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_image_view"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <!-- First line of text -->
+        <TextView
+            android:id="@+id/first_line_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Line of Text"
+            android:textSize="16sp" />
+
+        <!-- Second line of text -->
+        <TextView
+            android:id="@+id/second_line_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Line of Text"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
